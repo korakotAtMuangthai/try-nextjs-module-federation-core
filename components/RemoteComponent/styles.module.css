@@ -1,0 +1,7 @@
+.container {
+  padding: 30px;
+}
+
+.inner {
+  @apply p-3 bg-gray-100 text-3xl;
+}

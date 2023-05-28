@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import styles from "./styles.module.css";
+import "twin.macro";
 
 export default function RemoteComponent({
   text = "(Remote) Current Path",
@@ -13,14 +15,16 @@ export default function RemoteComponent({
   const id = router.query.id;
 
   return (
-    <div>
+    <div className={styles.container}>
       <div
-        className="pb-3 color"
+        className={styles.inner}
         style={{
           color,
         }}
       >
-        {text} - {router.asPath}
+        <span tw="font-bold underline">
+          {text} - {router.asPath}
+        </span>
       </div>
       {id && (
         <div>
