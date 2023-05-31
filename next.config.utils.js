@@ -10,6 +10,7 @@ function initialMF(config, options) {
       remotes: {},
       exposes: {
         "./remote-component": "./components/RemoteComponent",
+        "./SyncTranslation": "./lib/translation/SyncTranslation",
       },
       shared: {},
     };
