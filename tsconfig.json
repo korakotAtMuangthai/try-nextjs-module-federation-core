@@ -16,9 +16,9 @@
     "incremental": true,
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "types": ["@types/json-schema", "@types/estree"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"],
-  "types": ["@types/json-schema", "@types/estree"]
+  "exclude": ["node_modules"]
 }
