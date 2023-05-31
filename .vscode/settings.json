@@ -15,5 +15,7 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "tailwindCSS.classAttributes": ["class", "className", "ngClass", "tw"]
+  // "css.validate": false
 }
